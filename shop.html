@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+
+  <!-- slick carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+  <title>Usato Point!</title>
+</head>
+
+<body>
+  <!-- Navbar-->
+  <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-first fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img class="logo ml-3" src="/media/2026703-ffffff.png" alt="" /></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar-example"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-example">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item font-weight-bold">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item font-weight-bold">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item font-weight-bold">
+            <a class="nav-link" href="profilo.html">Profilo</a>
+          </li>
+
+          <li class="nav-item pr-3">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">
+              <i class="fas fa-user text-second"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="profilo.html" class="btn btn-outline-light bg-accent border-0 font-weight-bold"><i
+                class="fas fa-plus pr-2"></i>Inserisci Annuncio!</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header-->
+  <header class="bg-header">
+    <div class="container h-100">
+      <div class="row align-items-center h-100">
+        <div class="col-12 col-md-8">
+          <h2 class="h1 text-first font-weight-bold font-italic">Tutti i nostri prodotti</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- filter & products-->
+  <div class="container my-5 py-5">
+    <div class="row">
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="stickyFilters">
+          <p class="lead text-first font-weight-bold">Filtra per</p-lead>
+          <div class="accordion" id="accordionFilters">
+            <div class="">
+              <div class="" id="filterByCategory">
+                <h2 class="mb-0">
+                  <button class="btn  btn-block text-left text-first font-weight-bold" type="button"
+                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Categorie
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="filterByCategory"
+                data-parent="#accordionFilters">
+                <div class="card-body">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio1">Elettronica</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">Hi-fi</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio3">TV</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio4">Audio</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio5">Computer</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio6" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio6">Videogiochi</label>
+                  </div>
+                  <div class="custom-control custom-radio mt-3">
+                    <input type="radio" id="customRadio7" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio7">Tutte le categorie</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="" id="filterByPrice">
+                <h2 class="mb-0">
+                  <button class="btn  btn-block text-left text-first font-weight-bold collapsed" type="button"
+                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Prezzo
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="filterByPrice" data-parent="#accordionFilters">
+                <div class="card-body">
+                  <label for="rangeSlider">500€</label>
+                  <input type="range" class="custom-range" id="rangeSlider">
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="" id="filterByWord">
+                <h2 class="mb-0">
+                  <button class="btn  btn-block text-left text-first font-weight-bold collapsed" type="button"
+                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Parola
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="filterByWord" data-parent="#accordionFilters">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="inputWord">Cerca per parola</label>
+                    <input type="email" class="form-control" id="inputWord" aria-describedby="emailHelp">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-8 col-lg-9">
+
+
+        <div class="row">
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card shadow border-0 roudend-0">
+              <a href="prodotto.html"><img src="./media/monitor-msi-optix-1.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title text-first">Monitor MSI Opti</h5>
+                <p class="text-first font-weight-bold"><i class="fas fa-map-marker-alt text-first"></i> TERNI (TR)</p>
+                <span class=" h5 text-accent font-weight-bold">150€</span><a href=""><i class="fas fa-heart float-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card shadow border-0 roudend-0">
+              <a href="prodotto.html"><img src="./media/tv-lg-oled.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title text-first">Smart TV LG Oled</h5>
+                <p class="text-first font-weight-bold"><i class="fas fa-map-marker-alt text-first"></i> TERNI (TR)</p>
+                <span class=" h5 text-accent font-weight-bold">399€</span><a href=""><i class="fas fa-heart float-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card shadow border-0 roudend-0">
+              <a href="prodotto.html"><img src="./media/zelda-switch.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title text-first">Zelda-Switch</h5>
+                <p class="text-first font-weight-bold"><i class="fas fa-map-marker-alt text-first"></i> TERNI (TR)</p>
+                <span class=" h5 text-accent font-weight-bold">49€</span><a href=""><i class="fas fa-heart float-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card shadow border-0 roudend-0">
+              <a href="prodotto.html"><img src="./media/acer-aspire.jpg" class="card-img-top roudend-0" alt="..."></a>
+              <div class="card-body roudend-0">
+                <h5 class="card-title text-first">Acer-Aspire</h5>
+                <p class="text-first font-weight-bold"><i class="fas fa-map-marker-alt text-first"></i> TERNI (TR)</p>
+                <span class=" h5 text-accent font-weight-bold">359€</span><a href=""><i class="fas fa-heart float-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card shadow border-0 roudend-0">
+              <a href="prodotto.html"><img src="./media/google-home.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title text-first">Google Home</h5>
+                <p class="text-first font-weight-bold"><i class="fas fa-map-marker-alt text-first"></i> TERNI (TR)</p>
+                <span class=" h5 text-accent font-weight-bold">69€</span><a href=""><i class="fas fa-heart float-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card shadow border-0 roudend-0">
+              <a href="prodotto.html"><img src="./media/iphone-x.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title text-first">Apple Iphone X</h5>
+                <p class="text-first font-weight-bold"><i class="fas fa-map-marker-alt text-first"></i> TERNI (TR)</p>
+                <span class=" h5 text-accent font-weight-bold">599€</span><a href=""><i class="fas fa-heart float-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card shadow border-0 roudend-0">
+              <a href="prodotto.html"><img src="./media/lenovo legion y740.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title text-first">Lenovo legion</h5>
+                <p class="text-first font-weight-bold"><i class="fas fa-map-marker-alt text-first"></i> TERNI (TR)</p>
+                <span class=" h5 text-accent font-weight-bold">499€</span><a href=""><i class="fas fa-heart float-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card shadow border-0 roudend-0">
+              <a href="prodotto.html"><img src="./media/samsung galaxy note10 lite.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title text-first">SG Note10 Lite</h5>
+                <p class="text-first font-weight-bold"><i class="fas fa-map-marker-alt text-first"></i> TERNI (TR)</p>
+                <span class=" h5 text-accent font-weight-bold">459€</span><a href=""><i class="fas fa-heart float-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card shadow border-0 roudend-0">
+              <a href="prodotto.html"><img src="./media/samsung galaxy tab s6 lite.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title text-first">SG Tab S6 Lite</h5>
+                <p class="text-first font-weight-bold"><i class="fas fa-map-marker-alt text-first"></i> TERNI (TR)</p>
+                <span class=" h5 text-accent font-weight-bold">159€</span><a href=""><i class="fas fa-heart float-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card shadow border-0 roudend-0">
+              <img src="./media/beats pro wireless.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-first">Beats Pro wireless</h5>
+                <p class="text-first font-weight-bold"><i class="fas fa-map-marker-alt text-first"></i> TERNI (TR)</p>
+                <span class=" h5 text-accent font-weight-bold">59€</span><a href=""><i class="fas fa-heart float-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card shadow border-0 roudend-0">
+              <img src="./media/smart tv samsung.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-first">TV Samsung</h5>
+                <p class="text-first font-weight-bold"><i class="fas fa-map-marker-alt text-first"></i> TERNI (TR)</p>
+                <span class=" h5 text-accent font-weight-bold">459€</span><a href=""><i class="fas fa-heart float-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+            <div class="card shadow border-0 roudend-0">
+              <img src="./media/apple ipad air.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-first">Apple Ipad Air</h5>
+                <p class="text-first font-weight-bold"><i class="fas fa-map-marker-alt text-first"></i> TERNI (TR)</p>
+                <span class=" h5 text-accent font-weight-bold">379€</span><a href=""><i class="fas fa-heart float-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="container-fluid bg-footer">
+    <div class="row">
+      <div class="col-12 p-4">
+        <img class="logo ml-3" src="./media//2026703-ffffff.png" alt="" />
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <h3 class="text-second ml-3">Usato Point!</h3>
+        <p class="text-second pl-3 mb-0 font-weight-bold">Sede: 221 Baker Street, Terni, 05100 TR</p>
+        <p class="text-second pl-3 mb-0 font-weight-bold">TEL: 312 7673457</p>
+        
+      </div>
+      <div class="col-12 col-md-3">
+        <p class="text-second font-weight-bold ml-3 text-center">
+          Privacy Policy <br> Informativa sui cookie <br> P.IVA 1234567890 <br>
+          © 2020 Usato Point! Srl 
+        </p>
+      </div>
+      <div class="col-12 col-md-5 text-center mb-3">
+        <p class="text-first font-weight-bold text-second">
+          Seguici sui nostri social
+        </p>
+        <a href="" class="mr-4 ml-5">
+          <i class="fab fa-facebook text-first fa-2x text-second"></i>
+        </a>
+        <a href="" class="mr-4">
+          <i class="fab fa-linkedin text-first fa-2x text-second"></i>
+        </a>
+        <a href="" class="mr-4">
+          <i class="fab fa-instagram text-first fa-2x text-second"></i>
+        </a>
+        <a href="" class="mr-4">
+          <i class="fab fa-twitter text-first fa-2x text-second"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Inserisci email" />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Inserisci Password" />
+            </div>
+
+            <button type="submit" class="btn bg-first text-second">Entra</button>
+          </form>
+        </div>
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Registrati</h5>
+
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Username</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Inserisci Username" />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Inserisci email" />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Inserisci Password" />
+            </div>
+            <div class="form-check pl-0">
+              <input id="checkbox1" type="checkbox">
+              <label for="checkbox1">Accetto termini e condizioni</label>
+            </div>
+
+            <button type="submit" class="btn bg-first text-second">Registrati</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>

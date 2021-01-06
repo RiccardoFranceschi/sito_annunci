@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 80px;
+}
+
+:root {
+  --first-color: #0062bd;
+  --second-color: #fafafa;
+  --accent: #f89a20;
+}
+
+.text-first {
+  color: var(--first-color);
+}
+
+.text-second {
+  color: var(--second-color);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.navbar-brand {
+  height: 80px;
+  line-height: 50px;
+  width: 200px;
+}
+
+.nav-item .nav-link {
+  color: var(--second-color) !important;
+}
+
+.nav-item .nav-link:hover {
+  border-bottom: 2px solid var(--second-color);
+}
+
+.logo {
+  width: 40px;
+  transform: rotate(50deg);
+}
+
+.bg-first {
+  background-color: var(--first-color);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.nav-link {
+  color: var(--first-color);
+}
+
+.nav-link:hover {
+  color: var(--first-color);
+}
+
+#navbar {
+  box-shadow: 0 5px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu {
+  color: var(--first-color) !important;
+}
+
+.header {
+  height: 600px;
+  background: linear-gradient( var(--second-color),#bdbdbd94, var(--second-color)),url(media/media_abstract-1438441_1280.png);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 4px 7px rgb(48, 46, 46);
+}
+
+.bg-header {
+  height: 400px;
+  background: linear-gradient(var(--second-color),#bdbdbd94,var(--second-color)),url(media/media_abstract-1438441_1280.png);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 4px 7px rgb(48, 46, 46);
+}
+
+.img-fluid {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.border-bottom-first {
+  border-bottom: 5px solid var(--accent);
+  border-left: 5px solid var(--accent);
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+.stickyFilters {
+  position: sticky;
+  top: 120px;
+}
+
+.btn-outline-light:hover {
+  color: var(--first-color);
+}
+
+.img-profile {
+  border: 6px solid var(--first-color);
+  padding: 5px;
+}
+
+.bg-footer {
+  background-color: var(--first-color);
+}
+
+
+
+/* ---- particles.js ---- */
+
+#particles-container {
+  width: 100%;
+  height: 400px;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 400px;
+  background-color: #ffffff;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
